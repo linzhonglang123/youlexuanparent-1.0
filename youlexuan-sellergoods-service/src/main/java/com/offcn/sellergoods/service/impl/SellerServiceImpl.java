@@ -64,7 +64,7 @@ public class SellerServiceImpl implements SellerService {
 	
 	/**
 	 * 根据ID获取实体
-	 * @param id
+	 * @param sellerId
 	 * @return
 	 */
 	@Override

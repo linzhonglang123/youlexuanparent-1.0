@@ -76,7 +76,7 @@ public class SellerController {
 	
 	/**
 	 * 获取实体
-	 * @param id
+	 * @param sellerId
 	 * @return
 	 */
 	@RequestMapping("/findOne")
@@ -86,7 +86,7 @@ public class SellerController {
 	
 	/**
 	 * 批量删除
-	 * @param ids
+	 * @param sellerIds
 	 * @return
 	 */
 	@RequestMapping("/delete")
@@ -102,7 +102,7 @@ public class SellerController {
 	
 		/**
 	 * 查询+分页
-	 * @param brand
+	 * @param seller
 	 * @param page
 	 * @param rows
 	 * @return

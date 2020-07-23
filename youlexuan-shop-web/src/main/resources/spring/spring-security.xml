@@ -26,7 +26,7 @@
 
     <!-- 引用dubbo 服务 -->
     <dubbo:application name="youlexuan-shop-web" />
-    <dubbo:registry address="zookeeper://192.168.68.129:2181"/>
+    <dubbo:registry address="zookeeper://192.168.188.128:2181"/>
     <dubbo:reference id="sellerService" interface="com.offcn.sellergoods.service.SellerService"/>
 
     <beans:bean id="bcryptEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"></beans:bean>

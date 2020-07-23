@@ -33,7 +33,17 @@
     <!-- 引用dubbo 服务 -->
     <dubbo:consumer id="default-consumer" default="true" check="false" timeout="8000" retries="0" />
     <dubbo:application name="youlexuan-manager-web" />
-    <dubbo:registry address="zookeeper://192.168.68.129:2181"/>
+    <dubbo:registry address="zookeeper://192.168.188.128:2181"/>
     <dubbo:annotation package="com.offcn.sellergoods.controller" />
 
+
+    <!-- 加载属性文件 -->
+    <context:property-placeholder location="classpath:application.properties"/>
+    <!-- 配置上传文件解析器 -->
+    <bean id="multipartResolver"
+          class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="defaultEncoding" value="UTF-8"></property>
+        <!-- 设定文件上传的最大值 5MB，5*1024*1024 -->
+        <property name="maxUploadSize" value="5242880"></property>
+    </bean>
 </beans>

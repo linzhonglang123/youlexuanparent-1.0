@@ -1,5 +1,7 @@
 package com.offcn.sellergoods.service.impl;
 import java.util.List;
+
+import com.offcn.sellergoods.service.ItemCatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import com.alibaba.dubbo.config.annotation.Service;
 import com.github.pagehelper.Page;
@@ -8,7 +10,6 @@ import com.offcn.mapper.TbItemCatMapper;
 import com.offcn.pojo.TbItemCat;
 import com.offcn.pojo.TbItemCatExample;
 import com.offcn.pojo.TbItemCatExample.Criteria;
-import com.offcn.sellergoods.service.ItemCatService;
 
 import com.offcn.entity.PageResult;
 

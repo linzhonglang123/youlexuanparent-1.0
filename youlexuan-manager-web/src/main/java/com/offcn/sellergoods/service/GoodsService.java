@@ -1,5 +1,7 @@
 package com.offcn.sellergoods.service;
 import java.util.List;
+
+import com.offcn.group.Goods;
 import com.offcn.pojo.TbGoods;
 
 import com.offcn.entity.PageResult;
@@ -41,7 +43,7 @@ public interface GoodsService {
 	 * @param id
 	 * @return
 	 */
-	public TbGoods findOne(Long id);
+	public Goods findOne(Long id);
 	
 	
 	/**
